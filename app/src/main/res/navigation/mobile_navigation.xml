@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.arada.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home" >
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_calendar"
+        android:name="com.example.arada.ui.calendar.CalendarFragment"
+        tools:layout="@layout/fragment_calendar" />
+    <fragment
+        android:id="@+id/navigation_record"
+        android:name="com.example.arada.ui.record.RecordFragment"
+        tools:layout="@layout/fragment_record" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_camera"
+        android:name="com.example.arada.ui.camera.CameraFragment"
+        tools:layout="@layout/fragment_camera" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_alarm"
+        android:name="com.example.arada.ui.alarm.AlarmFragment"
+        tools:layout="@layout/fragment_alarm" >
+
+    </fragment>
+</navigation>

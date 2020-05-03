@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">나랑공부하자</string>
+    <string name="title_home">Home</string>
+    <string name="title_calendar">Calendar</string>
+    <string name="title_record">record</string>
+    <string name="title_camera">camera</string>
+    <string name="title_alarm">alarm</string>
+</resources>
