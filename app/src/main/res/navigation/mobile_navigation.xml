@@ -13,7 +13,12 @@
     <fragment
         android:id="@+id/navigation_calendar"
         android:name="com.example.arada.ui.calendar.CalendarFragment"
-        tools:layout="@layout/fragment_calendar" />
+        tools:layout="@layout/fragment_calendar" >
+        <action
+            android:id="@+id/action_navigation_calendar_to_navigation_memo"
+            app:destination="@id/navigation_memo"
+            />
+    </fragment>
     <fragment
         android:id="@+id/navigation_record"
         android:name="com.example.arada.ui.record.RecordFragment"
@@ -30,6 +35,14 @@
         android:id="@+id/navigation_alarm"
         android:name="com.example.arada.ui.alarm.AlarmFragment"
         tools:layout="@layout/fragment_alarm" >
-
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_memo"
+        android:name="com.example.arada.ui.calendar.MeMoFragment"
+        tools:layout="@layout/fragment_insert_memo"
+        >
+        <action
+            android:id="@+id/action_navigation_memo_to_navigation_calendar"
+            app:destination="@id/navigation_calendar" />
     </fragment>
 </navigation>

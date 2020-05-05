@@ -1,11 +1,15 @@
 package com.example.arada;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 
 import com.example.arada.R;
+import com.example.arada.ui.record.RecordFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -34,4 +38,18 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_dday:
+                playDday();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+    public void playDday(){
+        Intent intent = new Intent(MainActivity.this,DdayActivity.class);
+        MainActivity.this.startActivity(intent);
+    }
 }

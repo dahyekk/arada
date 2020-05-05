@@ -8,7 +8,6 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class IntroActivity extends AppCompatActivity {
-
     @Override
     public void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +20,6 @@ public class IntroActivity extends AppCompatActivity {
             public void run() {
                 Intent intent= new Intent(IntroActivity.this, MainActivity.class);
                 startActivity(intent);
-
                 finish();
             }
         },2000);
